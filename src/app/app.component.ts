@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  nombre: string = 'pipes-app';
+  nombre: string = 'mI noMbre';
   valor: number = 1000;
   objeto = {
     valor: "objeto"

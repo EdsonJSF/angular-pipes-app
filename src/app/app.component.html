@@ -4,6 +4,15 @@
   <h1>{{ objeto | json }}</h1>
 </div>
 
-<button pButton (click)="cambiarNombre()">
-  Cambiar nombre
-</button>
+<button
+  pButton
+  (click)="cambiarNombre()"
+  class="p-button-help"
+  icon="pi pi-bell"
+  iconPos="right"
+  label="Cambiar nombre"
+></button>
+
+<p-card [header]="nombre | titlecase" subheader="Sub header">
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, veritatis!
+</p-card>
