@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { PrimeNgModule } from '../modules/prime-ng/prime-ng.module';
+
 import { NumerosComponent } from './pages/numeros/numeros.component';
 import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { BasicosComponent } from './pages/basicos/basicos.component';
@@ -15,7 +17,7 @@ const importExport = [
 
 @NgModule({
   declarations: [importExport],
-  imports: [CommonModule],
+  imports: [CommonModule, PrimeNgModule],
   exports: [importExport],
 })
 export class VentasModule {}
