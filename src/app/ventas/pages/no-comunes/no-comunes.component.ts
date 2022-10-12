@@ -15,7 +15,7 @@ export class NoComunesComponent implements OnInit {
   };
 
   // i18nPlural
-  clientes: string[] = ['', '', ''];
+  clientes: string[] = ['Ana', 'Antonio', 'Angel'];
   clentesMapa = {
     '=1': 'cliente esperando',
     other: 'clientes esperando',
