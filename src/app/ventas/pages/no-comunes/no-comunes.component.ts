@@ -28,6 +28,22 @@ export class NoComunesComponent implements OnInit {
     direccion: 'Venezuela',
   };
 
+  // KeyValue Pipe
+  heroes = [
+    {
+      nombre: 'Super Man',
+      vuela: true,
+    },
+    {
+      nombre: 'Robin',
+      vuela: false,
+    },
+    {
+      nombre: 'Acua Man',
+      vuela: false,
+    }
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}
