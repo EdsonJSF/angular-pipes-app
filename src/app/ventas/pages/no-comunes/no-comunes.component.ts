@@ -21,6 +21,13 @@ export class NoComunesComponent implements OnInit {
     other: 'clientes esperando',
   };
 
+  // KeyValue Pipe
+  persona = {
+    nombre: 'Angel',
+    edad: 50,
+    direccion: 'Venezuela',
+  };
+
   constructor() {}
 
   ngOnInit(): void {}
