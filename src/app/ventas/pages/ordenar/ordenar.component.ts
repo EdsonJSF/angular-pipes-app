@@ -8,36 +8,41 @@ import { Color, Heroe } from '../../interfaces/ventas.interface';
 })
 export class OrdenarComponent implements OnInit {
   enMayusculas: boolean = true;
+  ordenarPor: string = '';
 
   heroes: Heroe[] = [
     {
       nombre: 'Superman',
       vuela: true,
-      color: Color.azul
+      color: Color.azul,
     },
     {
       nombre: 'Batman',
       vuela: false,
-      color: Color.negro
+      color: Color.negro,
     },
     {
       nombre: 'Robin',
       vuela: false,
-      color: Color.verde
+      color: Color.verde,
     },
     {
       nombre: 'Daredevil',
       vuela: false,
-      color: Color.rojo
+      color: Color.rojo,
     },
     {
       nombre: 'Linterna Verde',
       vuela: true,
-      color: Color.verde
+      color: Color.verde,
     },
-  ]
+  ];
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  cambiarOrden(value: string) {
+    this.ordenarPor = value;
+  }
 }

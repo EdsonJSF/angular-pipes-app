@@ -16,23 +16,26 @@
       icon="pi pi-sort"
       label="Nombre"
       styleClass="mr-1 p-button-primary"
+      (click)="cambiarOrden('nombre')"
     ></p-button>
     <p-button
       icon="pi pi-sort"
-      label="Valores"
+      label="Vuela"
       styleClass="mr-1 p-button-success"
+      (click)="cambiarOrden('vuela')"
     ></p-button>
     <p-button
       icon="pi pi-sort"
       label="Color"
       styleClass="mr-1 p-button-help"
+      (click)="cambiarOrden('color')"
     ></p-button>
   </div>
 </p-toolbar>
 
 <div class="grid">
   <div class="col mt-5">
-    <p-table [value]="heroes">
+    <p-table [value]="heroes | ordenar: ordenarPor">
       <ng-template pTemplate="header">
         <tr>
           <th>Nombre</th>
