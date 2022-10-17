@@ -9,6 +9,7 @@ import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 
 import { MayusculasPipe } from './pipes/mayusculas.pipe';
+import { VuelaPipe } from './pipes/vuela.pipe';
 
 const importExport = [
   NumerosComponent,
@@ -18,7 +19,7 @@ const importExport = [
 ];
 
 @NgModule({
-  declarations: [importExport, MayusculasPipe],
+  declarations: [importExport, MayusculasPipe, VuelaPipe],
   imports: [CommonModule, PrimeNgModule],
   exports: [importExport],
 })
